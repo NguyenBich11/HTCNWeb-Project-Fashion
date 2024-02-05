@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+#header {
+  padding: 0 52px;
+  background-color: var(--pink-color);
+  height: 104px;
+  display: flex;
+  align-items: center
+}
+
+.header__loogo {
+  height: 104px;
+  margin-right: 32px;
+}
+
+.header__link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__item-btn {
+  width: 200px;
+  height: 40px;
+  border-radius: 32px;
+  background-color: #fff;
+  border: none;
+}
+
+.header__item-search {
+  position: relative;
+}
+
+.header__item-btn--icon {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.header__item-cart,
+.header__item-user {
+  position: relative;
+  height: 40px; 
+  width: 50px;
+  border-radius: 32px;
+  background-color: var(--white-color);
+  text-align: center;
+}
+
+.header__item-cart > i {
+  font-size: 24px;
+  position: absolute;
+  top: 9px;
+  left: 12px;
+}
+
+.header__item-user > i {
+  font-size: 24px;
+  position: absolute;
+  top: 7px;
+  left: 15px;
+}
+
+.header__item {
+  font-size: 20px;
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+.header__item:hover {
+  color: var(--text-pink-color);
+  font-weight: bold;
+}
+
+/* Container */
+#container {
+  background-color: var(--pink-color);
+  height: 100vh;
+}
+
+#content {
+  background-color: var(--white-color);
+  width: calc(100% - 104px);
+  margin: 0 auto;
+  height: 100vh;
+}
+
+/* Footer */
+#footer {
+  font-size: 18px;
+  height: 180px;
+  background-color: var(--pink-color);
+  color: var(--text-pink-color);
+}
+
+.footer__content {
+  width: calc(100% - 104px);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.footer__contact {
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.footer__links {
+  margin: 8px 0 0 32px;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 50% 50%;
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+  margin: 12px;
+}
+
+.footer__item > i {
+  margin-right: 8px;
+}
