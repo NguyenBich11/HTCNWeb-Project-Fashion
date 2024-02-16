@@ -4,3 +4,12 @@
   --pink-color: #FBEFEE;
   --text-pink-color: #C58787;
 }
+
+@keyframes textAnimation {
+  to {
+    opacity: .5;
+  }
+  from {
+    opacity: 1;
+  }
+}

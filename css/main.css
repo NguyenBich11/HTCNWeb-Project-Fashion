@@ -77,24 +77,139 @@ html {
   font-size: 20px;
   color: var(--black-color);
   text-decoration: none;
+  letter-spacing: 1.6px;
 }
 
 .header__item:hover {
   color: var(--text-pink-color);
   font-weight: bold;
+  transition: textAnimation ease-in .3;
+}
+
+/* Slider */
+#slider {
+  width: 100%;
+  height: 120vh;
+  background: url('../asset/img/slider/canva-slider.png') top center / cover no-repeat;
 }
 
 /* Container */
 #container {
   background-color: var(--pink-color);
-  height: 100vh;
+  height: fit-content;
+  padding-top: 52px;
 }
 
 #content {
   background-color: var(--white-color);
   width: calc(100% - 104px);
   margin: 0 auto;
-  height: 100vh;
+}
+
+/* Trang chủ */
+.content__main {
+  margin: 0 auto;
+  width: calc(100% - 68px);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 12px;
+  font-size: 20px;
+}
+
+.content__main-sitemap {
+  margin: 0 auto;
+  width: calc(100% - 68px);
+  padding: 12px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.content__main-head {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.content__main-img {
+  width: 100%;
+}
+
+.content__img {
+  height: 64vh;
+}
+
+.content__right {
+  flex: 1;
+  margin-left: 94px;
+}
+
+.content__desc-item {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.content__left-sm {
+  flex: 1;
+  margin: 0 64px;
+}
+
+/* Component products */
+.content__list {
+  display: flex;
+  width: 33.333%;
+  justify-content: space-between;
+}
+
+.content__item {
+  font-size: 22px;
+  line-height: 1.5;
+  width: 100%;
+  margin: 46px;
+  letter-spacing: 1.2px;
+}
+
+.content__item-img {
+  object-fit: fill;
+  width: 100%;
+  max-width: fit-content;
+  height: 300px;
+  width: 308px;
+  text-align: center;
+  display: block;
+}
+
+.item__desc-productsname {
+  font-weight: 500;
+}
+
+.content__item-desc {
+  position: relative;
+  text-transform: uppercase;
+  margin-top: 28px;
+}
+
+.item__desc-price {
+  font-weight: 400;
+  color: #F41E1E;
+}
+
+.item__desc-btn {
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 100px;
+  height: 46px;
+  right: 0;
+  top: 30%;
+  position: absolute;
+  cursor: pointer;
+  background-color: var(--white-color);
+  color: #000;
 }
 
 /* Footer */
@@ -103,6 +218,7 @@ html {
   height: 180px;
   background-color: var(--pink-color);
   color: var(--text-pink-color);
+  letter-spacing: 1.6px;
 }
 
 .footer__content {
