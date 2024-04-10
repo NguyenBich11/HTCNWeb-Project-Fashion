@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="../asset/fontawesome-free-6.5.1-web/css/all.min.css">
   <!-- Link font chữ -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese" rel="stylesheet">
+   <!-- Link boostrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Quần</title>
 </head>
 <body>
@@ -21,7 +23,7 @@
       <div class="header__link">
         <a href="../html/trangchu.html" class="header__item">Trang chủ</a>
         <a href="../html/trangao.html" class="header__item">Áo</a>
-        <a href="#" class="header__item">Đầm</a>
+        <a href="../html/trangdam.html" class="header__item">Đầm</a>
         <a href="../html/trangvay.html" class="header__item">Váy</a>
         <a href="../html/trangquan.html" class="header__item">Quần</a>
         <div class="header__item header__item-search">
@@ -38,121 +40,125 @@
     </header>
 
     <!-- Slider -->
-    <div id="slider">
-
+    <div class="container-fluid p-0" id="">
+      <img src="/asset/img/slider/canva-slider.png" alt="" class="img">
     </div>
 
     <!-- Content main -->
-    <div id="container">
-      <main id="content">
-        <div class="content__main">
+    <div id="container" class="container-fluid pt-4 p-0">
+      <main class="container p-4 bg-white">
+        <div class="card-group">
           <!-- Component 1 -->
-          <div class="content__item">
-            <img src="../asset/img/quan/quan-bong-bay.webp" alt="Quần bóng bay" class="content__item-img">
+          <div class="card m-4 border-0">
+            <img src="../asset/img/quan/quan-bong-bay.webp" alt="Quần bóng bay" class="card-img-top">
             <div class="content__item-desc">
               <h4 class="item__desc-productsname">Quần bóng bay</h4>
-              <p class="item__desc-price">1.289.000 đ</p>
-              <button class="item__desc-btn">Mua ngay</button>
+              <p class="text-danger fs-4">1.289.000 đ</p>
+              <button type="button" class="item__desc-btn btn btn-outline-danger">Mua ngay</button>
             </div>
           </div>
-          <div class="content__item">
-            <img src="../asset/img/quan/quan-cap-cao.jpg" alt="Quần cạp cao" class="content__item-img">
+
+          <div class="card m-4 border-0">
+            <img src="../asset/img/quan/quan-cap-cao.jpg" alt="Quần cạp cao" class="card-img-top">
             <div class="content__item-desc">
               <h4 class="item__desc-productsname">Quần cạp cao</h4>
-              <p class="item__desc-price">1.589.000 đ</p>
-              <button class="item__desc-btn">Mua ngay</button>
+              <p class="text-danger fs-4">1.589.000 đ</p>
+              <button type="button" class="item__desc-btn btn btn-outline-danger">Mua ngay</button>
             </div>
           </div>
-          <div class="content__item">
-            <img src="../asset/img/quan/quan-ong-dung.webp" alt="Quần ống đứng" class="content__item-img">
+
+          <div class="card m-4 border-0">
+            <img src="../asset/img/quan/quan-ong-dung.webp" alt="Quần ống đứng" class="card-img-top">
             <div class="content__item-desc">
               <h4 class="item__desc-productsname">Quần ống đứng</h4>
-              <p class="item__desc-price">1.600.000 đ</p>
-              <button class="item__desc-btn">Mua ngay</button>
+              <p class="text-danger fs-4">1.600.000 đ</p>
+              <button type="button" class="item__desc-btn btn btn-outline-danger">Mua ngay</button>
             </div>
           </div>
         </div>
 
         <!-- Component 2 -->
-        <div class="content__main">
-          <div class="content__item">
-            <img src="../asset/img/quan/quan-ong-loe-lung-cao.jpg" alt="Quần ống loe" class="content__item-img">
+        <div class="card-group">
+          <div class="card m-4 border-0">
+            <img src="../asset/img/quan/quan-ong-loe-lung-cao.jpg" alt="Quần ống loe" class="card-img-top">
             <div class="content__item-desc">
               <h4 class="item__desc-productsname">Quần ống loe</h4>
-              <p class="item__desc-price">1.400.000 đ</p>
-              <button class="item__desc-btn">Mua ngay</button>
+              <p class="text-danger fs-4">1.400.000 đ</p>
+              <button type="button" class="item__desc-btn btn btn-outline-danger">Mua ngay</button>
             </div>
           </div>
-          <div class="content__item">
-            <img src="../asset/img/quan/quan-palazzo.jpg" alt="Quần palazzo" class="content__item-img">
+          <div class="card m-4 border-0">
+            <img src="../asset/img/quan/quan-palazzo.jpg" alt="Quần palazzo" class="card-img-top">
             <div class="content__item-desc">
               <h4 class="item__desc-productsname">Quần palazzo</h4>
-              <p class="item__desc-price">1.487.000 đ</p>
-              <button class="item__desc-btn">Mua ngay</button>
+              <p class="text-danger fs-4">1.487.000 đ</p>
+              <button type="button" class="item__desc-btn btn btn-outline-danger">Mua ngay</button>
             </div>
           </div>
-          <div class="content__item">
-            <img src="../asset/img/quan/quan-thang-Lumière.jpg" alt="Quần thẳng Lumière" class="content__item-img">
+          <div class="card m-4 border-0">
+            <img src="../asset/img/quan/quan-thang-Lumière.jpg" alt="Quần thẳng Lumière" class="card-img-top">
             <div class="content__item-desc">
               <h4 class="item__desc-productsname">Quần thẳng Lumière</h4>
-              <p class="item__desc-price">1.700.000 đ</p>
-              <button class="item__desc-btn">Mua ngay</button>
+              <p class="text-danger fs-4">1.700.000 đ</p>
+              <button type="button" class="item__desc-btn btn btn-outline-danger">Mua ngay</button>
             </div>
           </div>
         </div>
 
         <!-- Component 3 -->
-        <div class="content__main">
-          <div class="content__item">
-            <img src="../asset/img/quan/quan-the-thao.webp" alt="Quần thể thao" class="content__item-img">
+        <div class="card-group">
+          <div class="card m-4 border-0">
+            <img src="../asset/img/quan/quan-the-thao.webp" alt="Quần thể thao" class="card-img-top">
             <div class="content__item-desc">
               <h4 class="item__desc-productsname">Quần thể thao</h4>
-              <p class="item__desc-price">1.500.000 đ</p>
-              <button class="item__desc-btn">Mua ngay</button>
+              <p class="text-danger fs-4">1.500.000 đ</p>
+              <button type="button" class="item__desc-btn btn btn-outline-danger">Mua ngay</button>
             </div>
           </div>
-          <div class="content__item">
-            <img src="../asset/img/quan/quan-thon.webp" alt="Quần chân thon" class="content__item-img">
+
+          <div class="card m-4 border-0">
+            <img src="../asset/img/quan/quan-thon.webp" alt="Quần chân thon" class="card-img-top">
             <div class="content__item-desc">
               <h4 class="item__desc-productsname">Quần chân thon</h4>
-              <p class="item__desc-price">2.000.000 đ</p>
-              <button class="item__desc-btn">Mua ngay</button>
+              <p class="text-danger fs-4">2.000.000 đ</p>
+              <button type="button" class="item__desc-btn btn btn-outline-danger">Mua ngay</button>
             </div>
           </div>
-          <div class="content__item">
-            <img src="../asset/img/quan/quan-vai-satin-ong-tong.webp" alt="Quần vải satin" class="content__item-img">
+
+          <div class="card m-4 border-0">
+            <img src="../asset/img/quan/quan-vai-satin-ong-tong.webp" alt="Quần vải satin" class="card-img-top">
             <div class="content__item-desc">
               <h4 class="item__desc-productsname">Quần vải satin</h4>
-              <p class="item__desc-price">2.200.000 đ</p>
-              <button class="item__desc-btn">Mua ngay</button>
+              <p class="text-danger fs-4">2.200.000 đ</p>
+              <button type="button" class="item__desc-btn btn btn-outline-danger">Mua ngay</button>
             </div>
           </div>
         </div>
 
         <!-- Component 4 -->
-        <div class="content__main">
-          <div class="content__item">
-            <img src="../asset/img/quan/quan-short-ca-heo.webp" alt="Quần short cá heo" class="content__item-img">
+        <div class="card-group">
+          <div class="card m-4 border-0">
+            <img src="../asset/img/quan/quan-short-den.jpg" alt="Quần short đen" class="content__item-img">
             <div class="content__item-desc">
-              <h4 class="item__desc-productsname">Quần short cá heo</h4>
-              <p class="item__desc-price">1.300.000 đ</p>
-              <button class="item__desc-btn">Mua ngay</button>
+              <h4 class="item__desc-productsname">Quần short đen</h4>
+              <p class="text-danger fs-4">1.300.000 đ</p>
+              <button type="button" class="item__desc-btn btn btn-outline-danger">Mua ngay</button>
             </div>
           </div>
-          <div class="content__item">
+          <div class="card m-4 border-0">
             <img src="../asset/img/quan/quan-short-denim.jpg" alt="Quần short denim" class="content__item-img">
             <div class="content__item-desc">
               <h4 class="item__desc-productsname">Quần short denim</h4>
-              <p class="item__desc-price">1.500.000 đ</p>
-              <button class="item__desc-btn">Mua ngay</button>
+              <p class="text-danger fs-4">1.500.000 đ</p>
+              <button type="button" class="item__desc-btn btn btn-outline-danger">Mua ngay</button>
             </div>
           </div>
-          <div class="content__item">
+          <div class="card m-4 border-0">
             <img src="../asset/img/quan/quan-short-cotton.jpg" alt="Quần short vải" class="content__item-img">
             <div class="content__item-desc">
               <h4 class="item__desc-productsname">Quần short vải</h4>
-              <p class="item__desc-price">1.400.000 đ</p>
-              <button class="item__desc-btn">Mua ngay</button>
+              <p class="text-danger fs-4">1.400.000 đ</p>
+              <button type="button" class="item__desc-btn btn btn-outline-danger">Mua ngay</button>
             </div>
           </div>
         </div>
@@ -160,34 +166,32 @@
     </div>
 
     <!-- Footer -->
-    <footer id="footer">
-      <div class="footer__content">
+    <footer class="container-fluid p-0" id="footer">
+      <div class="container footer__content">
         <h2 class="footer__contact">Contact us</h2>
-        <div class="footer__links">
-          <!-- Facebook -->
-          <div class="footer__item">
-            <i class="fa-brands fa-facebook"></i>
-            <p class="item__desc">Fanpage</p>
+        <div class="row m-2">
+          <div class="col">
+            <div class="d-flex fs-4 text-center align-items-center">
+              <i class="fa-brands fa-facebook"></i>
+              <p class="m-0 p-3">Fanpage</p>
+            </div>
+
+            <div class="d-flex fs-4 text-center align-items-center">
+              <i class="fa-brands fa-square-instagram"></i>
+              <p class="m-0 p-3">Instagram</p>
+            </div>
           </div>
 
-          <!-- Call -->
-          <div class="footer__item">
-            <i class="fa-solid fa-square-phone"></i>
-            <p class="item__desc">0123456789</p>
-          </div>
+          <div class="col">
+            <div class="d-flex fs-4 text-center align-items-center">
+              <i class="fa-solid fa-phone"></i>
+              <p class="m-0 p-3">0123456789</p>
+            </div>
 
-          <!-- Ins -->
-          <div class="footer__item">
-            <i class="fa-brands fa-instagram"></i>
-            <p class="item__desc">Instagram</p>
-          </div>
-
-          <!-- Address -->
-          <div class="footer__item"> 
-            <i class="fa-solid fa-location-dot"></i>
-            <p class="item__desc">
-              12 Nguyễn Văn Bảo, P.4, Q. Gò Vấp, TP. Hồ Chí Minh
-            </p>
+            <div class="d-flex fs-4 text-center align-items-center">
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="m-0 p-3">12, Nguyen Van Bao, phuong 4, Go Vap</p>
+            </div>
           </div>
         </div>
       </div>
