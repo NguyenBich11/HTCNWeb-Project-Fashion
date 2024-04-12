@@ -130,3 +130,63 @@
 .footer__item > i {
   margin-right: 8px;
 }
+
+
+/* Đăng nhập */
+#bt_DN{
+  background-color: #E4B3AF;
+}
+#card1{
+  color: #FBEFEE;
+}
+#fa1{
+  background-color: #E4B3AF;
+  margin: 0 50px;
+  width: 100px;
+  height: 30px;
+}
+#fa2{
+  background-color: #E4B3AF;
+  margin: 0 50px;
+  width: 100px;
+  height: 30px;
+}
+#icon1{
+  width: 60px;
+  height: 60px;
+}
+#icon2{
+  width: 60px;
+  height: 60px;
+}
+#p_1{
+  font-style: italic;
+}
+#DangNhap_khac{
+  display: flex;
+  justify-content: center;
+}
+#card-tong{
+  background-color: #FBEFEE;
+}
+
+
+/* Đăng ký */
+#h2{
+  position: relative;
+  top: 50px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  right: 400px;
+  top: 300px;
+}
+#form_DK{
+  position: relative;
+  top: 50px;
+  left: 200px;
+}
+#btn_DK{
+  background-color: #E4B3AF;
+  position: relative;
+  top: 20px;
+}
