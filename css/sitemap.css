@@ -1,35 +1,9 @@
-/* CSS reset */
-/* body, h1, h2, h3, p, ul, li {
-  margin: 0;
-  padding: 0;
-} */
-
-body {
-  font-family: Arial, sans-serif;
+.btn_custom {
+  background-color: var( --pink-color) !important;
+  color: var( --text-pink-color) !important;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 20px;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-nav ul li a:hover {
-  color: #000;
+.btn_custom:hover {
+  opacity: .9;
+  color: pink !important;
 }
