@@ -134,4 +134,3 @@ function saveUserInfoToLocal() {
     localStorage.setItem('email', email);
     localStorage.setItem('password', dkPassword);
 }
-
