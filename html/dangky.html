@@ -49,17 +49,21 @@
           <div class="mb-3 row">
             <label class="col-3 text-start" for="">Họ và tên</label>
             <div class="col-8">
-              <input class="form-control" type="text" id="ho" placeholder="Nhập họ và tên của bạn">
+              <input class="form-control" type="text" id="hovaten" placeholder="Nhập họ và tên của bạn">
+              <span class="text-danger">*</span>
+              <span class="text-danger" id="errorName"></span>
             </div>
           </div>
           <!-- Giới tính -->
           <div class="mb-3 row">
-            <label class="col-3 text-start" for="">Giới tính:</label>
+            <label class="col-3 text-start" for="" id="gender">Giới tính:</label>
             <div class="col-8">
               <input type="radio" class="form-check-input" id="nu" name="gioiTinh" value="nu">
               <label class="form-check-label" for="nu">Nữ</label>
               <input type="radio" class="form-check-input " id="nam" name="gioiTinh" value="nam" checked>
               <label class="form-check-label" for="nam">Nam</label>
+              <span class="text-danger">*</span>
+              <span class="text-danger" id="errorGender"></span>
             </div>
           </div>
           <!-- Ngày sinh -->
@@ -67,20 +71,26 @@
             <label class="col-3 text-start" for="">Ngày sinh:</label>
             <div class="col-8">
               <input class="form-control" type="date" id="birthdate">
+              <span class="text-danger">*</span>
+              <span class="text-danger" id="errorBirthdate"></span>
             </div>
           </div>
           <!-- Email -->
           <div class="mb-3 row">
             <label class="col-3 text-start" for="">Email:</label>
             <div class="col-8">
-              <input class="form-control" type="text" id="email">
+              <input class="form-control" type="email" id="email">
+              <span class="text-danger">*</span>
+              <span class="text-danger" id="errorEmail"></span>
             </div>
           </div>
           <!-- Mật khẩu -->
           <div class="mb-3 row">
             <label class="col-3 text-start" for="">Mật khẩu:</label>
             <div class="col-8">
-              <input class="form-control" type="password" id="password">
+              <input class="form-control" type="password" id="dkPassword">
+              <span class="text-danger">*</span>
+              <span class="text-danger" id="errorPassword"></span>
             </div>
           </div>
           <!-- Nhập lại mật khẩu -->
@@ -88,9 +98,11 @@
             <label class="col-3 text-start" for="">Nhập lại mật khẩu:</label>
             <div class="col-8">
               <input class="form-control" type="password" id="rePassword">
+              <span class="text-danger">*</span>
+              <span class="text-danger" id="errorRePassword"></span>
             </div>
           </div>
-          <a href="/html/dangnhap.html" id="btn_DK" class="btn text-white">Đăng ký</a>
+          <a id="btn_DK" class="btn text-white">Đăng ký</a>
         </form>
       </div>
     </div>
