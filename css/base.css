@@ -190,3 +190,17 @@
   position: relative;
   top: 20px;
 }
+
+/* Slider */
+#img1{
+  width: 1080px;
+  height: 880px;
+}
+#img2{
+  width: 1080px;
+  height: 880px;
+}
+#img3{
+  width: 1080px;
+  height: 880px;
+}
