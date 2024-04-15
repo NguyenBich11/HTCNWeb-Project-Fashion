@@ -112,6 +112,7 @@
   letter-spacing: 2px;
   font-weight: 400;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .footer__links {

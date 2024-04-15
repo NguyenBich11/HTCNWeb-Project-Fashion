@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/sitemap.css">
   <!-- Link icon -->
   <link rel="stylesheet" href="../asset/fontawesome-free-6.5.1-web/css/all.min.css">
   <!-- Link font chữ -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese" rel="stylesheet">
-  <!-- Link boostrap -->
+  <!-- Link bootstrap  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <title>Trang chủ</title>
+  <title>Site map</title>
 </head>
 <body>
   <div id="wrapper">
     <!-- Header -->
     <header id="header">
-      <a href="../html/sitemap.html">
+      <a href="#">
         <img src="../asset/img/logo/logo-final.png" alt="" class="header__loogo">
       </a>
       <div class="header__link">
@@ -35,7 +35,7 @@
         <a href="../html/dangnhap.html" class="header__item header__item-user">
           <i class="fa-solid fa-user"></i>
         </a>
-        <a href="#" class="header__item header__item-cart">
+        <a href="" class="header__item header__item-cart">
           <i class="fa-solid fa-cart-shopping"></i>
         </a>
       </div>
@@ -44,81 +44,69 @@
     <!-- Slider -->
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-      <!-- Indicators/dots -->
-      <div class="carousel-indicators">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
         <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
         <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-      </div>
-      
-      <!-- The slideshow/carousel -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img id="img1" src="/asset/img/slider/canva-slider.png"  class="d-block" style="width:100%">
-        </div>
-        <div class="carousel-item">
-          <img id="img2" src="/asset/img/slider/z5346549196808_8a43779bd52326735f05347ace49f190.jpg"  class="d-block" style="width:100%">
-        </div>
-        <div class="carousel-item">
-          <img id="img3" src="/asset/img/slider/slider13.jpg"  class="d-block" style="width:100%">
-        </div>
-      </div>
-      <!-- Left and right controls/icons -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
     </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img id="img1" src="/asset/img/slider/canva-slider.png"  class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+        <img id="img2" src="/asset/img/slider/z5346549196808_8a43779bd52326735f05347ace49f190.jpg"  class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+        <img id="img3" src="/asset/img/slider/slider13.jpg"  class="d-block" style="width:100%">
+        </div>
+    </div>
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+    </div>
+
     <!-- Content main -->
     <div id="container" class="container-fluid pt-4 p-0">
+      <!-- Sitemap -->
       <main class="container p-4 bg-white">
-        <!-- Tầm nhìn -->
-        <div class="row m-4 mt-4">
-          <div class="col-5">
-            <img src="../asset/img/trang-chu/tam--nhin.jpg" alt="Tầm nhìn" class="w-100">
+        <h2 class="h2 text-center fs-1">Site Map</h2>
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <a class="btn_custom btn" href="../html/trangchu.html">Trang chủ</a>
           </div>
-          <div class="col-7 fs-3 mt-4">
-            <h2 class="content__head">Tầm nhìn</h2>
-              <ol class="content__desc-list">
-                <li class="content__desc-item">FemmeChic - Thương hiệu thời trang của phái đẹp phấn đấu trở thành thương
-                  hiệu nổi tiếng và được nhiều chị em tin dùng nhất tại Việt Nam. 
-                </li>
-                <li class="content__desc-item">
-                  FemmeChic mong muốn tạo nên một thương hiệu Việt với đẳng cấp và chất lượng uy 
-                  tín, từ đó có thể khẳng định vị thế trên thị trường thời trang thế giới.
-                </li>
-              </ol>
+          <div class="col d-flex justify-content-center">
+            <a class="btn_custom btn" href="../html/trangao.html">Trang áo</a>
           </div>
         </div>
-
-        <!-- Sứ mệnh -->
-        <div class="row m-4">
-          <div class="col-6 fs-3 mt-4">
-            <h2 class="content__head">Sứ mệnh</h2>
-              <ol class="content__desc-list">
-                <li class="content__desc-item">
-                  Trở thành người tiên phong của thời đại với những ý tưởng sáng tạo đi đầu trong 
-                  ngành thời trang phái đẹp.
-                </li>
-                <li class="content__desc-item">
-                  Cùng đưa thương hiệu tỏa sáng, tạo động lực cho nhau, cùng biến ý tưởng thành hiện 
-                  thực bằng tinh thần gắn kết, tương tác, biết lắng nghe và tôn trọng.
-                </li>
-                <li class="content__desc-item"> 
-                  Để tạo niềm vui và tình cảm cho khách hàng, mỗi chúng ta phải thường xuyên liên tục tỏa sáng. 
-                  Không được để cho năng lực của bản thân bị ngủ quên, không ngừng thách thức khó khăn, phải luôn 
-                  luôn tự đổi mới bản thân.
-                </li>
-                <li class="content__desc-item">
-                  Tạo ra giá trị cao bằng sự thấu hiểu, đồng cảm và những đề xuất có giá trị thật sự, thỏa mãn sự 
-                  hài lòng cho khách hàng.
-                </li>
-              </ol>
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <a class="btn_custom btn" href="../html/trangdam.html">Trang đầm</a>
           </div>
-          <div class="col-6">
-            <img src="../asset/img/trang-chu/su-menh.jpg" alt="Sứ mệnh" class="w-100">
+          <div class="col d-flex justify-content-center">
+            <a class="btn_custom btn" href="../html/trangvay.html">Trang váy</a>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <a class="btn_custom btn" href="../html/trangquan.html">Trang quần</a>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <a class="btn_custom btn" href="../html/dangnhap.html">Trang đăng nhập</a>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <a class="btn_custom btn" href="../html/dangky.html">Trang đăng ký</a>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <a class="btn_custom btn" href="../html/gioithieuthanhvien.html">Trang giới thiệu thành viên</a>
           </div>
         </div>
       </main>

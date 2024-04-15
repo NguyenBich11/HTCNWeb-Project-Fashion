@@ -44,6 +44,10 @@ btnDK.addEventListener('click', (e) => {
     }, 3000);
 });
 
+function navigateSitemap() {
+    window.location.href = '/html/gioithieuthanhvien.html';
+}
+
 // Nhấn vào nút mua ngay -> trang đăng nhập
 function redictrectLogin() {
     window.location.href = '/html/dangnhap.html'
