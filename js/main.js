@@ -2,6 +2,25 @@
 const btDN = document.getElementById('bt_DN');
 const btnDK = document.getElementById('btn_DK');
 
+btnDK.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    // Check nếu có ít nhất 1 trường chưa nhập
+    if(!checkedName() || !checkedBirthDate() || !checkedEmail() || !checkedPassword()) {
+        return;
+    }
+
+    // Lưu thông tin đăng ký vào localStorage
+    saveUserInfoToLocal();
+
+    alert('Đăng ký thành công!');
+    
+    // Chuyển sang trang đăng nhập
+    setTimeout(function() {
+        window.location.href = '/html/dangnhap.html';
+    }, 3000);
+})
+
 btDN.addEventListener('click', function(e) {
     e.preventDefault();
 
@@ -24,25 +43,6 @@ function checkLogin() {
         userName.focus();
     }
 }
-
-btnDK.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    // Check nếu có ít nhất 1 trường chưa nhập
-    if(!checkedName() || !checkedBirthDate() || !checkedEmail() || !checkedPassword()) {
-        return;
-    }
-
-    // Lưu thông tin đăng ký vào localStorage
-    saveUserInfoToLocal();
-
-    alert('Đăng ký thành công!');
-    
-    // Chuyển sang trang đăng nhập
-    setTimeout(function() {
-        window.location.href = '/html/dangnhap.html';
-    }, 3000);
-});
 
 function navigateSitemap() {
     window.location.href = '/html/gioithieuthanhvien.html';
@@ -73,8 +73,6 @@ function checkedName() {
 function checkedBirthDate() {
     const birthdate = document.querySelector('input[type=date]');
     const errorBirthdate = document.getElementById('errorBirthdate');
-
-    console.log();
 
     if(birthdate.value === '') {
         errorBirthdate.innerText = 'Vui lòng chọn ngày sinh';
